@@ -8,8 +8,8 @@
 
 ## Tasks
 
-- [ ] 1. プロジェクトのセットアップ
-  - [ ] 1.1 Vite + TypeScript プロジェクトを初期化する
+- [x] 1. プロジェクトのセットアップ
+  - [x] 1.1 Vite + TypeScript プロジェクトを初期化する
     - `package.json`、`tsconfig.json`(strict)、`vite.config.ts`(`viteSingleFile()`、`base: './'`、`build.target: 'es2020'`)、`index.html` の雛形を作成する
     - 依存関係を追加する: `vite`、`vite-plugin-singlefile`、`typescript`、`vitest`、`fast-check`、`happy-dom`、`@supabase/supabase-js`
     - `vitest` の設定(環境は既定で node、UI テストでは happy-dom を指定)と `npm test`(`vitest --run`)、`npm run build` のスクリプトを用意する
@@ -17,7 +17,7 @@
     - `src/domain`、`src/infra`、`src/ui`、`tests` のディレクトリ構成を作る
     - _Requirements: 15.1, 15.2, 15.3_
 
-  - [ ] 1.2 Supabase マイグレーション SQL を作成する
+  - [x] 1.2 Supabase マイグレーション SQL を作成する
     - `supabase/migrations/0001_init.sql` に、`is_valid_player_name` 関数、`ranking_entries` テーブル(名前規則、点数 0〜1,000,000、`session_id` の長さ、`session_id` の一意制約。名前の一意制約は設けない)、並び順用インデックス、`ranking_view`(`rank()` による順位、`security_invoker = true`)を定義する
     - RLS を有効化し、anon に `ranking_entries` の SELECT と INSERT のみ、`ranking_view` の SELECT のみを付与する。UPDATE と DELETE のポリシーと権限は作らない
     - _Requirements: 9.5, 9.7, 9.14, 10.2, 10.4, 15.4, 15.5, 15.6, 15.7, 15.8, 15.9_
