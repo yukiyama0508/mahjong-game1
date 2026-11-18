@@ -31,6 +31,18 @@
         "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
         "timestamp": 1794979097078
       }
+    ],
+    "2.1 牌の基本型とユーティリティを実装する": [
+      {
+        "executionId": "0a837942-1dcc-4214-ae33-10a10d22512a",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794989036293
+      },
+      {
+        "executionId": "0a837942-1dcc-4214-ae33-10a10d22512a",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794989128871
+      }
     ]
   }
 }

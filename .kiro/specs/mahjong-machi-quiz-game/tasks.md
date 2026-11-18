@@ -23,7 +23,7 @@
     - _Requirements: 9.5, 9.7, 9.14, 10.2, 10.4, 15.4, 15.5, 15.6, 15.7, 15.8, 15.9_
 
 - [ ] 2. 牌と手牌文字列
-  - [ ] 2.1 牌の基本型とユーティリティを実装する
+  - [x] 2.1 牌の基本型とユーティリティを実装する
     - `src/domain/tile.ts` に `TileId`、`Suit`、`Counts`、`Hand`、`Result<T, E>`、`suitOf`、`numberOf`、`toCounts`、`sortForDisplay`、`tileLabel` を実装する
     - `TileId` の昇順が表示順(萬子、筒子、索子、字牌。字牌は東南西北白發中)になるよう割り当てる
     - _Requirements: 5.1, 5.3_
