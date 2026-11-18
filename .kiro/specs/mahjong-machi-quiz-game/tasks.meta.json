@@ -237,6 +237,109 @@
         "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
         "timestamp": 1794992915872
       }
+    ],
+    "5.1 役判定と役満検出を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794993151035
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794994797810
+      }
+    ],
+    "5.2 符・翻・点数の計算と高点法を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794994798432
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794994949178
+      }
+    ],
+    "5.3 点数計算の決定性と順序非依存のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794994949473
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995277189
+      }
+    ],
+    "5.4 点数の構造と範囲のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794994951000
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995277869
+      }
+    ],
+    "5. 役と点数の計算": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794994952028
+      }
+    ],
+    "5.5 高点法と Question_Score の最大性のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794994952845
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995278954
+      }
+    ],
+    "5.6 点数の符・翻に対する単調性のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794994953760
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995279472
+      }
+    ],
+    "5.7 点数計算の既知の例の単体テストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794994954328
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995280423
+      }
+    ],
+    "6. チェックポイント - 点数計算の確認": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995281312
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995424552
+      }
     ]
   }
 }
