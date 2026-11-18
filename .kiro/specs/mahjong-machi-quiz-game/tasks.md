@@ -49,41 +49,41 @@
     - **Property 3: 不正な手牌文字列の拒否**
     - **Validates: Requirements 12.2, 12.3, 12.4**
 
-- [ ] 3. 分解の列挙、待ち計算、待ち形分類
-  - [ ] 3.1 Interpretation の列挙を実装する
+- [x] 3. 分解の列挙、待ち計算、待ち形分類
+  - [x] 3.1 Interpretation の列挙を実装する
     - `src/domain/interpretation.ts` に `Meld`、`WaitShape`、`Interpretation`、`enumerateInterpretations` を実装する
     - 雀頭候補ごとの再帰分解、整列した面子列での重複除去、和了牌を含む面子ごとの Interpretation 生成、待ち形の判定(両面、カンチャン、ペンチャン、シャボ、単騎)、七対子(`chiitoiTanki`)を扱う。国士無双は対象外とする
     - _Requirements: 2.2, 2.6, 6.10_
 
-  - [ ] 3.2 待ち計算を実装する
+  - [x] 3.2 待ち計算を実装する
     - `src/domain/wait-calculator.ts` に `WaitError`、`calcWaits` を実装する
     - 列挙とは別実装の高速な `isWinning`(早期終了する面子分解と七対子の判定)を使い、4枚持ちの牌種を除外する。13枚でない手と5枚以上の同一牌は `invalidHand` を返す
     - _Requirements: 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7_
 
-  - [ ]* 3.3 待ち集合の並べ替え不変性のプロパティテストを書く
+  - [x]* 3.3 待ち集合の並べ替え不変性のプロパティテストを書く
     - **Property 4: 待ち集合の並べ替え不変性**
     - **Validates: Requirements 2.8**
 
-  - [ ]* 3.4 不正な手牌の拒否のプロパティテストを書く
+  - [x]* 3.4 不正な手牌の拒否のプロパティテストを書く
     - **Property 6: 不正な手牌の拒否**
     - **Validates: Requirements 2.7**
 
-  - [ ]* 3.5 待ち集合と Interpretation の存在の同値のプロパティテストを書く
+  - [x]* 3.5 待ち集合と Interpretation の存在の同値のプロパティテストを書く
     - **Property 5: 待ち集合と Interpretation の存在の同値**
     - テスト側に素朴な再帰の参照実装を置き、小さな手で `calcWaits` と照合する
     - 九蓮の形で9種類(要件 2.5)、国士無双形で空集合(要件 2.6)の example も含める
     - **Validates: Requirements 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.9, 2.10**
 
-  - [ ] 3.6 待ち形分類を実装する
+  - [x] 3.6 待ち形分類を実装する
     - `src/domain/wait-classifier.ts` に `WaitType`、`WaitClassification`、`classifyHand` を実装する
     - 待ち牌が3種類以上、または全待ち牌の全 Interpretation の待ち形が2種類以上にまたがる場合は `multi`、それ以外は単一の待ち形を返す
     - _Requirements: 3.3, 3.5_
 
-  - [ ]* 3.7 待ち形分類のプロパティテストを書く
+  - [x]* 3.7 待ち形分類のプロパティテストを書く
     - **Property 7: 待ち形分類は定義と一致する**
     - **Validates: Requirements 3.3, 3.5**
 
-- [ ] 4. チェックポイント - 牌、待ち計算の確認
+- [x] 4. チェックポイント - 牌、待ち計算の確認
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 5. 役と点数の計算

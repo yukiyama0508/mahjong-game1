@@ -15,6 +15,18 @@
     "2.6 不正な手牌文字列の拒否のプロパティテストを書く": {
       "status": "passed",
       "lastRunTimestamp": 1794990103760
+    },
+    "3.3 待ち集合の並べ替え不変性のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794992647866
+    },
+    "3.4 不正な手牌の拒否のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794992648972
+    },
+    "3.5 待ち集合と Interpretation の存在の同値のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794992664193
     }
   },
   "executionHistory": {
@@ -126,6 +138,104 @@
         "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
         "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
         "timestamp": 1794990129062
+      }
+    ],
+    "3.1 Interpretation の列挙を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794991429794
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992186039
+      }
+    ],
+    "3.2 待ち計算を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992186606
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992305827
+      }
+    ],
+    "3.3 待ち集合の並べ替え不変性のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992306228
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992690043
+      }
+    ],
+    "3.4 不正な手牌の拒否のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992307232
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992690315
+      }
+    ],
+    "3.5 待ち集合と Interpretation の存在の同値のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992308347
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992694375
+      }
+    ],
+    "3.6 待ち形分類を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992308987
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992694576
+      }
+    ],
+    "3. 分解の列挙、待ち計算、待ち形分類": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992694672
+      }
+    ],
+    "3.7 待ち形分類のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992695088
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992915153
+      }
+    ],
+    "4. チェックポイント - 牌、待ち計算の確認": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992915872
       }
     ]
   }
