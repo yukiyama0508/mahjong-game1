@@ -197,57 +197,57 @@
 - [x] 9. チェックポイント - ドメイン層の確認
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 10. インフラ層
-  - [ ] 10.1 Clock と Timer を実装する
+- [x] 10. インフラ層
+  - [x] 10.1 Clock と Timer を実装する
     - `src/infra/clock.ts` に `Clock` と `performance.now()` による本番実装を、`src/infra/timer.ts` に `Timer` と `remainingSeconds` を実装する
     - 単調時計で経過時間を測り、`setTimeout` と約100ms間隔の更新で終了を通知する。タブ非表示とフィードバック表示中も止めず、`visibilitychange` で経過時間を再確認する
     - _Requirements: 1.3, 1.4, 1.5, 1.6, 1.7_
 
-  - [ ]* 10.2 残り時間の表示のプロパティテストを書く
+  - [x]* 10.2 残り時間の表示のプロパティテストを書く
     - **Property 20: 残り時間の表示**
     - **Validates: Requirements 1.4**
 
-  - [ ]* 10.3 Timer の単体テストを書く
+  - [x]* 10.3 Timer の単体テストを書く
     - fake の `Clock` と fake timer で、30秒時点の終了通知、端末時刻の変更に影響されないこと、非表示タブとフィードバック表示中の継続を確認する
     - _Requirements: 1.5, 1.6, 1.7_
 
-  - [ ] 10.4 NameStore を実装する
+  - [x] 10.4 NameStore を実装する
     - `src/infra/name-store.ts` に `KeyValueStorage`、`NameStore`(`load`、`save`、`persistent`)を実装する
     - キー `machi.player` に JSON(`{"name": string}`)で保存し、文字列そのものと JSON の両方を読む。不正な値や破損した JSON は `null` を返す。ストレージの例外または `null` のストレージではメモリ保持に切り替える
     - _Requirements: 13.4, 13.6, 13.9, 13.12, 13.14, 13.15_
 
-  - [ ]* 10.5 NameStore のラウンドトリップのプロパティテストを書く
+  - [x]* 10.5 NameStore のラウンドトリップのプロパティテストを書く
     - **Property 24: NameStore のラウンドトリップ**
     - **Validates: Requirements 13.4, 13.12, 13.15**
 
-  - [ ] 10.6 Supabase クライアントと RankingClient を実装する
+  - [x] 10.6 Supabase クライアントと RankingClient を実装する
     - `src/infra/supabase-client.ts`(`createClient` に `VITE_SUPABASE_URL` と `VITE_SUPABASE_ANON_KEY` を渡す)と、`src/infra/ranking-client.ts` に `RankingClient`、`SubmitScoreResult`、`FetchRankingResult`、`RankingEntry`、Supabase 実装、`OfflineRankingClient` を実装する
     - `checkConnection` は `ranking_entries` への `head: true` の SELECT を5秒で打ち切る。`submitScore` は `23505` を `ok`、`23514` を `validation`、その他を `error` に分類し、登録後に `count(total_score > 自分の点数) + 1` で順位を取得する(失敗しても `ok`)。`fetchRanking` は `ranking_view` の上位100件を取得する
     - すべての要求に `AbortController` の5秒タイムアウトを付け、例外を投げず結果の共用体を返す。環境変数が未設定のときは `OfflineRankingClient`(常に `checkConnection` が `false`)を使う
     - _Requirements: 9.3, 9.5, 9.9, 9.11, 9.13, 9.14, 10.1, 10.2, 10.6, 11.5, 15.3_
 
-  - [ ]* 10.7 RankingClient のエラー分類の単体テストを書く
+  - [x]* 10.7 RankingClient のエラー分類の単体テストを書く
     - fake の Supabase クライアントで、`23505`、`23514`、通信エラー、5秒タイムアウト、不正なレスポンスの分類、`OfflineRankingClient` の挙動を表駆動で確認する
     - _Requirements: 9.11, 9.13, 9.14, 10.6_
 
-  - [ ] 10.8 AvailabilityTracker を実装する
+  - [x] 10.8 AvailabilityTracker を実装する
     - `src/infra/availability.ts` に `Availability`、`AvailabilityTracker`(`current`、`refresh`)を実装する。初期値と未完了の状態は `offline` とする
     - _Requirements: 10.13, 10.14, 10.15, 11.7, 11.8, 13.16_
 
-  - [ ] 10.9 RegistrationController を実装する
+  - [x] 10.9 RegistrationController を実装する
     - `src/infra/registration.ts` に `RegistrationStatus`、`RegistrationPlan`、`decideRegistration`、`RegistrationController`(`registerSession`、`retry`)を実装する
     - ゲーム終了時に接続確認を行い、成功なら Player_Name、合計点、Session_Id を自動送信する。失敗なら `notApplicable`(リクエストを送らない)にする。同名の既存エントリがあっても登録する。成功した Session_Id には以後再送しない。再試行は同じ名前、点数、Session_Id で再送する。名前は `NameStore` の現在の Player_Name を使う
     - _Requirements: 9.1, 9.3, 9.4, 9.7, 9.8, 9.9, 9.10, 9.11, 9.12, 9.13, 9.14, 9.15, 9.16, 9.17_
 
-  - [ ]* 10.10 登録の再送制御のプロパティテストを書く
+  - [x]* 10.10 登録の再送制御のプロパティテストを書く
     - **Property 27: セッションごとの登録は成功後に再送されない**
     - **Validates: Requirements 9.10, 9.12, 9.14**
 
-  - [ ]* 10.11 AvailabilityTracker と RegistrationController の単体テストを書く
+  - [x]* 10.11 AvailabilityTracker と RegistrationController の単体テストを書く
     - `decideRegistration` の2行(接続成功で `register`、失敗で `skipOffline`)、接続確認の失敗でリクエストが送られないこと、接続確認の成功後の失敗で `failed` になること、スコア0の登録、`refresh` による `current` の更新を確認する
     - _Requirements: 9.4, 9.11, 9.15, 9.17, 10.15, 11.7, 11.8_
 
-- [ ] 11. チェックポイント - インフラ層の確認
+- [x] 11. チェックポイント - インフラ層の確認
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 12. UI 層
