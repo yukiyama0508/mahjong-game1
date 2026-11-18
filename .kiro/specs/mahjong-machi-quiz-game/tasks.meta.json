@@ -1,5 +1,22 @@
 {
-  "pbtResults": {},
+  "pbtResults": {
+    "2.2 手牌の表示順のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794989691450
+    },
+    "2.4 手牌文字列のラウンドトリップのプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794990102513
+    },
+    "2.5 シリアライザの正準形と parse-print-parse のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794990103184
+    },
+    "2.6 不正な手牌文字列の拒否のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794990103760
+    }
+  },
   "executionHistory": {
     "1.1 Vite + TypeScript プロジェクトを初期化する": [
       {
@@ -42,6 +59,73 @@
         "executionId": "0a837942-1dcc-4214-ae33-10a10d22512a",
         "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
         "timestamp": 1794989128871
+      }
+    ],
+    "2.2 手牌の表示順のプロパティテストを書く": [
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794989584316
+      },
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794989950799
+      }
+    ],
+    "2.3 手牌文字列のパーサとシリアライザを実装する": [
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794989584657
+      },
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794989952106
+      }
+    ],
+    "2. 牌と手牌文字列": [
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794989952291
+      }
+    ],
+    "2.4 手牌文字列のラウンドトリップのプロパティテストを書く": [
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794989953088
+      },
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794990127837
+      }
+    ],
+    "2.5 シリアライザの正準形と parse-print-parse のプロパティテストを書く": [
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794989953499
+      },
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794990128742
+      }
+    ],
+    "2.6 不正な手牌文字列の拒否のプロパティテストを書く": [
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794989955867
+      },
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794990129062
       }
     ]
   }

@@ -22,30 +22,30 @@
     - RLS を有効化し、anon に `ranking_entries` の SELECT と INSERT のみ、`ranking_view` の SELECT のみを付与する。UPDATE と DELETE のポリシーと権限は作らない
     - _Requirements: 9.5, 9.7, 9.14, 10.2, 10.4, 15.4, 15.5, 15.6, 15.7, 15.8, 15.9_
 
-- [ ] 2. 牌と手牌文字列
+- [x] 2. 牌と手牌文字列
   - [x] 2.1 牌の基本型とユーティリティを実装する
     - `src/domain/tile.ts` に `TileId`、`Suit`、`Counts`、`Hand`、`Result<T, E>`、`suitOf`、`numberOf`、`toCounts`、`sortForDisplay`、`tileLabel` を実装する
     - `TileId` の昇順が表示順(萬子、筒子、索子、字牌。字牌は東南西北白發中)になるよう割り当てる
     - _Requirements: 5.1, 5.3_
 
-  - [ ]* 2.2 手牌の表示順のプロパティテストを書く
+  - [x]* 2.2 手牌の表示順のプロパティテストを書く
     - **Property 21: 手牌の表示順**
     - **Validates: Requirements 5.1**
 
-  - [ ] 2.3 手牌文字列のパーサとシリアライザを実装する
+  - [x] 2.3 手牌文字列のパーサとシリアライザを実装する
     - `src/domain/hand-parser.ts` に `ParseError`、`parseHand`、`serializeHand` を実装する
     - 同じ種別の複数グループの統合、不正文字・種別文字なしの数字列・数字なしの種別文字・字牌の範囲外・`0` の位置付きエラー、枚数エラー(0枚、15枚以上)、5枚以上の同一牌のエラーを扱う
     - _Requirements: 12.1, 12.2, 12.3, 12.4, 12.5_
 
-  - [ ]* 2.4 手牌文字列のラウンドトリップのプロパティテストを書く
+  - [x]* 2.4 手牌文字列のラウンドトリップのプロパティテストを書く
     - **Property 1: 手牌文字列のラウンドトリップ**
     - **Validates: Requirements 3.11, 12.6**
 
-  - [ ]* 2.5 シリアライザの正準形と parse-print-parse のプロパティテストを書く
+  - [x]* 2.5 シリアライザの正準形と parse-print-parse のプロパティテストを書く
     - **Property 2: シリアライザの正準形と parse-print-parse**
     - **Validates: Requirements 12.1, 12.5, 12.7, 12.8**
 
-  - [ ]* 2.6 不正な手牌文字列の拒否のプロパティテストを書く
+  - [x]* 2.6 不正な手牌文字列の拒否のプロパティテストを書く
     - **Property 3: 不正な手牌文字列の拒否**
     - **Validates: Requirements 12.2, 12.3, 12.4**
 
