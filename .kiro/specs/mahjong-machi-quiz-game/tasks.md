@@ -197,127 +197,127 @@
 - [x] 9. チェックポイント - ドメイン層の確認
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 10. インフラ層
-  - [ ] 10.1 Clock と Timer を実装する
+- [x] 10. インフラ層
+  - [x] 10.1 Clock と Timer を実装する
     - `src/infra/clock.ts` に `Clock` と `performance.now()` による本番実装を、`src/infra/timer.ts` に `Timer` と `remainingSeconds` を実装する
     - 単調時計で経過時間を測り、`setTimeout` と約100ms間隔の更新で終了を通知する。タブ非表示とフィードバック表示中も止めず、`visibilitychange` で経過時間を再確認する
     - _Requirements: 1.3, 1.4, 1.5, 1.6, 1.7_
 
-  - [ ]* 10.2 残り時間の表示のプロパティテストを書く
+  - [x]* 10.2 残り時間の表示のプロパティテストを書く
     - **Property 20: 残り時間の表示**
     - **Validates: Requirements 1.4**
 
-  - [ ]* 10.3 Timer の単体テストを書く
+  - [x]* 10.3 Timer の単体テストを書く
     - fake の `Clock` と fake timer で、30秒時点の終了通知、端末時刻の変更に影響されないこと、非表示タブとフィードバック表示中の継続を確認する
     - _Requirements: 1.5, 1.6, 1.7_
 
-  - [ ] 10.4 NameStore を実装する
+  - [x] 10.4 NameStore を実装する
     - `src/infra/name-store.ts` に `KeyValueStorage`、`NameStore`(`load`、`save`、`persistent`)を実装する
     - キー `machi.player` に JSON(`{"name": string}`)で保存し、文字列そのものと JSON の両方を読む。不正な値や破損した JSON は `null` を返す。ストレージの例外または `null` のストレージではメモリ保持に切り替える
     - _Requirements: 13.4, 13.6, 13.9, 13.12, 13.14, 13.15_
 
-  - [ ]* 10.5 NameStore のラウンドトリップのプロパティテストを書く
+  - [x]* 10.5 NameStore のラウンドトリップのプロパティテストを書く
     - **Property 24: NameStore のラウンドトリップ**
     - **Validates: Requirements 13.4, 13.12, 13.15**
 
-  - [ ] 10.6 Supabase クライアントと RankingClient を実装する
+  - [x] 10.6 Supabase クライアントと RankingClient を実装する
     - `src/infra/supabase-client.ts`(`createClient` に `VITE_SUPABASE_URL` と `VITE_SUPABASE_ANON_KEY` を渡す)と、`src/infra/ranking-client.ts` に `RankingClient`、`SubmitScoreResult`、`FetchRankingResult`、`RankingEntry`、Supabase 実装、`OfflineRankingClient` を実装する
     - `checkConnection` は `ranking_entries` への `head: true` の SELECT を5秒で打ち切る。`submitScore` は `23505` を `ok`、`23514` を `validation`、その他を `error` に分類し、登録後に `count(total_score > 自分の点数) + 1` で順位を取得する(失敗しても `ok`)。`fetchRanking` は `ranking_view` の上位100件を取得する
     - すべての要求に `AbortController` の5秒タイムアウトを付け、例外を投げず結果の共用体を返す。環境変数が未設定のときは `OfflineRankingClient`(常に `checkConnection` が `false`)を使う
     - _Requirements: 9.3, 9.5, 9.9, 9.11, 9.13, 9.14, 10.1, 10.2, 10.6, 11.5, 15.3_
 
-  - [ ]* 10.7 RankingClient のエラー分類の単体テストを書く
+  - [x]* 10.7 RankingClient のエラー分類の単体テストを書く
     - fake の Supabase クライアントで、`23505`、`23514`、通信エラー、5秒タイムアウト、不正なレスポンスの分類、`OfflineRankingClient` の挙動を表駆動で確認する
     - _Requirements: 9.11, 9.13, 9.14, 10.6_
 
-  - [ ] 10.8 AvailabilityTracker を実装する
+  - [x] 10.8 AvailabilityTracker を実装する
     - `src/infra/availability.ts` に `Availability`、`AvailabilityTracker`(`current`、`refresh`)を実装する。初期値と未完了の状態は `offline` とする
     - _Requirements: 10.13, 10.14, 10.15, 11.7, 11.8, 13.16_
 
-  - [ ] 10.9 RegistrationController を実装する
+  - [x] 10.9 RegistrationController を実装する
     - `src/infra/registration.ts` に `RegistrationStatus`、`RegistrationPlan`、`decideRegistration`、`RegistrationController`(`registerSession`、`retry`)を実装する
     - ゲーム終了時に接続確認を行い、成功なら Player_Name、合計点、Session_Id を自動送信する。失敗なら `notApplicable`(リクエストを送らない)にする。同名の既存エントリがあっても登録する。成功した Session_Id には以後再送しない。再試行は同じ名前、点数、Session_Id で再送する。名前は `NameStore` の現在の Player_Name を使う
     - _Requirements: 9.1, 9.3, 9.4, 9.7, 9.8, 9.9, 9.10, 9.11, 9.12, 9.13, 9.14, 9.15, 9.16, 9.17_
 
-  - [ ]* 10.10 登録の再送制御のプロパティテストを書く
+  - [x]* 10.10 登録の再送制御のプロパティテストを書く
     - **Property 27: セッションごとの登録は成功後に再送されない**
     - **Validates: Requirements 9.10, 9.12, 9.14**
 
-  - [ ]* 10.11 AvailabilityTracker と RegistrationController の単体テストを書く
+  - [x]* 10.11 AvailabilityTracker と RegistrationController の単体テストを書く
     - `decideRegistration` の2行(接続成功で `register`、失敗で `skipOffline`)、接続確認の失敗でリクエストが送られないこと、接続確認の成功後の失敗で `failed` になること、スコア0の登録、`refresh` による `current` の更新を確認する
     - _Requirements: 9.4, 9.11, 9.15, 9.17, 10.15, 11.7, 11.8_
 
-- [ ] 11. チェックポイント - インフラ層の確認
+- [x] 11. チェックポイント - インフラ層の確認
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 12. UI 層
-  - [ ] 12.1 DOM ヘルパーと TileView を実装する
+- [x] 12. UI 層
+  - [x] 12.1 DOM ヘルパーと TileView を実装する
     - `src/ui/dom.ts` に `h()` ヘルパーを実装する。文字列は必ず `textContent` / `createTextNode` で挿入する
     - `src/ui/tile-view.ts` に `renderTile` を実装する。34種類すべてが互いに異なるインライン SVG(数牌は数字と萬・筒・索、字牌は漢字)で、失敗時は `tileLabel` のテキストで代替する
     - _Requirements: 5.2, 5.3, 10.7, 13.7_
 
-  - [ ] 12.2 ログイン、スタート、説明画面を実装する
+  - [x] 12.2 ログイン、スタート、説明画面を実装する
     - `src/ui/screens/` に Login_Screen(名前入力と確定、パスワード欄なし、検証エラー表示、名前変更時の初期値と「戻る」、`persistent === false` の注意文)、Start_Screen(現在の名前、ゲーム開始、説明、名前変更、ランキング(`availability === 'enabled'` のときのみ))、Explanation_Screen(要件 14.3〜14.8 の内容と戻る)を実装する
     - 名前確定ではサーバーに接続しない。名前は `textContent` で表示する
     - _Requirements: 1.1, 10.13, 10.14, 13.1, 13.2, 13.3, 13.4, 13.5, 13.7, 13.8, 13.9, 13.11, 13.12, 13.13, 14.1, 14.2, 14.3, 14.4, 14.5, 14.6, 14.7, 14.8, 14.9_
 
-  - [ ] 12.3 回答の選択ロジックとゲーム画面を実装する
+  - [x] 12.3 回答の選択ロジックとゲーム画面を実装する
     - `src/ui/answer-selection.ts` に回答集合の選択切替とクリアの純粋関数を実装する
     - `src/ui/screens/game-screen.ts` に残り秒数と合計点、問題種別表示、13枚の手牌(`sortForDisplay`)、34種の牌パレット(各1回)、クリア、提出、空回答時のメッセージ、フィードバック(○/×と獲得点を700ms表示し、その間も入力を受け付ける)を実装する
     - タイマー更新では秒数と合計点の要素だけを更新する。判定直後に次の問題を表示する。説明画面への入口は置かない。クリックとタッチは `pointerup` で扱う
     - _Requirements: 1.2, 1.4, 5.1, 5.2, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 5.10, 5.13, 5.14, 5.15, 7.6, 7.7, 7.8, 11.3, 11.4, 14.10_
 
-  - [ ]* 12.4 回答の選択操作のプロパティテストを書く
+  - [x]* 12.4 回答の選択操作のプロパティテストを書く
     - **Property 22: 回答の選択操作**
     - **Validates: Requirements 5.5, 5.6, 5.8**
 
-  - [ ] 12.5 ゲーム終了画面を実装する
+  - [x] 12.5 ゲーム終了画面を実装する
     - `src/ui/screens/result-screen.ts` に合計点、回答数、正解数、解説一覧(手牌、待ち牌、回答、正誤、役、符、翻、Question_Score、獲得点。不正解は獲得点0と正解時の点数、不足と余分の牌(空なら「なし」を明示)、待ちごとの点数が異なる場合は高目の表示)を実装する
     - `RegistrationStatus` を表示する(登録中、完了と順位、登録失敗と再試行、検証エラーの理由、オフライン時の「オフラインのためランキングには登録されません」のみ)。0問の場合の表示、スタートへ戻る、ランキング(有効時のみ)を実装する。名前入力欄と登録ボタンは置かない
     - _Requirements: 8.1, 8.2, 8.3, 8.4, 8.5, 8.6, 8.7, 8.8, 8.9, 8.10, 9.1, 9.8, 9.9, 9.11, 9.13, 9.17, 10.13, 10.14_
 
-  - [ ] 12.6 ランキング画面を実装する
+  - [x] 12.6 ランキング画面を実装する
     - `src/ui/screens/ranking-screen.ts` に、開く前の接続確認、`fetchRanking`、順位・名前・点数・登録日の表示、0件の表示、取得失敗時のメッセージと再試行、戻るを実装する
     - `isHighlighted(rowName, playerName)` で名前が現在の Player_Name と一致する全行を強調する。名前は `textContent` で表示する
     - _Requirements: 10.1, 10.2, 10.3, 10.4, 10.5, 10.6, 10.7, 10.11, 10.12, 10.15_
 
-  - [ ]* 12.7 強調表示の規則のプロパティテストを書く
+  - [x]* 12.7 強調表示の規則のプロパティテストを書く
     - **Property 26: 強調表示の規則**
     - **Validates: Requirements 10.11**
 
-  - [ ] 12.8 AppController を実装する
+  - [x] 12.8 AppController を実装する
     - `src/ui/app-controller.ts` に `AppState`、画面遷移、ゲーム開始・終了処理を実装する。名前の有無で Login と Start を切り替える(接続確認を待たずに Start を表示)。Start 表示時とゲーム終了時に `AvailabilityTracker.refresh()` を呼ぶ
     - ゲーム終了時に `endSession` を呼び、`RegistrationController.registerSession` を実行して `lastResult` に保持する。ランキング画面の戻り先(`returnTo`)を保持し、戻っても Result の合計点、解説一覧、`Registration_Status` が変わらないようにする。スタートへ戻る操作でセッションデータを破棄する
     - ログインと名前変更では Supabase に接続しない
     - _Requirements: 1.1, 1.2, 1.3, 1.7, 1.10, 8.9, 8.11, 10.12, 11.5, 11.6, 11.7, 11.8, 13.4, 13.6, 13.9, 13.10, 13.16_
 
-  - [ ] 12.9 エントリポイント、HTML、スタイルを実装する
+  - [x] 12.9 エントリポイント、HTML、スタイルを実装する
     - `src/main.ts` で依存(Clock、Rng、NameStore、RankingClient/OfflineRankingClient、AvailabilityTracker、RegistrationController)を組み立てて AppController を起動する
     - `index.html` とスタイルを仕上げる。360px から 1920px で水平スクロールが出ないレイアウト、パレットの牌の 40×40px 以上のタッチターゲット、マウスとタッチの両対応にする
     - _Requirements: 11.1, 11.2, 11.3, 11.4, 15.1, 15.2_
 
-  - [ ]* 12.10 名前のテキスト表示のプロパティテストを書く
+  - [x]* 12.10 名前のテキスト表示のプロパティテストを書く
     - **Property 25: 名前はテキストとして表示される**
     - happy-dom で、ランキング行、Start 画面の名前、Login 画面の初期値を描画して検証する
     - **Validates: Requirements 10.7, 13.7, 13.8**
 
-  - [ ]* 12.11 画面の単体テストを書く
+  - [x]* 12.11 画面の単体テストを書く
     - happy-dom で次を確認する: 起動時の画面選択(名前の有無)、Login の検証エラー表示(空、21文字、制御文字)と保存されない場合の注意文、ランキングボタンの表示と非表示(有効、オフライン)、オフライン時にエラーや再試行が出ないこと、Game 画面に説明ボタンがないこと、未提出の問題が解説一覧にないこと、解説一覧の表示項目、0問の結果表示、ログインと名前変更でランキングクライアントの呼び出しが0回であること
     - _Requirements: 1.1, 8.3, 8.4, 8.6, 8.7, 9.17, 10.13, 10.14, 13.1, 13.3, 13.6, 13.12, 14.10_
 
-- [ ] 13. ビルド成果物と統合の確認
-  - [ ]* 13.1 ビルド成果物のスモークテストを書く
+- [x] 13. ビルド成果物と統合の確認
+  - [x]* 13.1 ビルド成果物のスモークテストを書く
     - `vite build` の後、`dist/index.html` が外部の `<script src>` と `<link rel="stylesheet">` を持たないことを確認する
     - 環境変数が未設定のビルドで `OfflineRankingClient` が使われ、ゲームが開始できてランキングが無効になることを確認する
     - _Requirements: 15.1, 15.2, 11.6_
 
-  - [ ]* 13.2 Supabase の統合テストを書く
+  - [x]* 13.2 Supabase の統合テストを書く
     - ローカルの Supabase に `0001_init.sql` を適用し、anon キーで次を確認する(ローカル Supabase が利用できない環境ではスキップする)
     - 名前規則(前後の空白と全角スペース、21文字、制御文字、空文字の拒否。絵文字を含む20文字の受理)、点数の範囲(-1 と 1,000,001 の拒否、0 と 1,000,000 の受理)、同じ `session_id` の2回目の拒否、同名の複数エントリの保存、並行する登録で欠落がないこと
     - 接続確認用の `head` SELECT の成功、anon の UPDATE と DELETE の拒否、101件以上の投入後の上位100件、点数降順、同点は先着順、同点は同順位であること
     - _Requirements: 9.5, 9.6, 9.7, 9.14, 9.15, 10.2, 10.4, 10.8, 10.9, 10.10, 15.4, 15.5, 15.6, 15.7, 15.8, 15.9_
 
-- [ ] 14. 最終チェックポイント
+- [x] 14. 最終チェックポイント
   - Ensure all tests pass, ask the user if questions arise.
 
 ## Notes

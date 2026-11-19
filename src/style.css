@@ -1,0 +1,218 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif;
+  line-height: 1.5;
+  color: #1f2933;
+  background: #e9f3ec;
+}
+
+#app {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+.screen {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0 0 12px;
+}
+h2 {
+  font-size: 1.25rem;
+}
+
+button {
+  font: inherit;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 8px 16px;
+  margin: 4px 4px 4px 0;
+  border: 1px solid #52616b;
+  border-radius: 6px;
+  background: #f5f7fa;
+  color: inherit;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+button:hover {
+  background: #e4e9ee;
+}
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #1c7ed6;
+  outline-offset: 2px;
+}
+button.primary {
+  background: #1b6b3a;
+  border-color: #1b6b3a;
+  color: #fff;
+}
+button.primary:hover {
+  background: #14532d;
+}
+
+input[type='text'],
+input:not([type]) {
+  font: inherit;
+  width: 100%;
+  max-width: 24rem;
+  min-height: 44px;
+  padding: 8px;
+  border: 1px solid #52616b;
+  border-radius: 6px;
+}
+
+.error,
+.ranking-error,
+.game-message,
+.registration.failed {
+  color: #b42318;
+}
+.notice {
+  background: #fff7e0;
+  border: 1px solid #e0b000;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+/* ゲーム画面 */
+.game-status {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.game-kind {
+  margin: 8px 0;
+  font-weight: bold;
+}
+.game-hand,
+.tile-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  align-items: center;
+}
+.game-hand {
+  margin: 8px 0 16px;
+}
+.game-palette {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
+  gap: 4px;
+  margin-bottom: 12px;
+}
+.palette-tile {
+  min-width: 40px;
+  min-height: 40px;
+  width: 100%;
+  margin: 0;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.palette-tile[aria-pressed='true'] {
+  background: #ffe08a;
+  border-color: #b7791f;
+  border-width: 2px;
+}
+.tile {
+  max-width: 100%;
+  height: auto;
+}
+.game-feedback {
+  min-height: 1.5em;
+  font-weight: bold;
+}
+.game-feedback.correct {
+  color: #1b6b3a;
+}
+.game-feedback.wrong {
+  color: #b42318;
+}
+.game-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* 結果画面 */
+.review-list {
+  padding-left: 1.5rem;
+}
+.review-entry {
+  margin-bottom: 16px;
+  padding: 8px;
+  border-left: 4px solid #52616b;
+  background: #f8fafb;
+}
+.review-entry.correct {
+  border-left-color: #1b6b3a;
+}
+.review-entry.incorrect {
+  border-left-color: #b42318;
+}
+.review-entry h3 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+}
+.field {
+  margin: 4px 0;
+}
+.per-wait {
+  padding-left: 1.2rem;
+}
+.best-wait {
+  font-weight: bold;
+}
+
+/* ランキング */
+.ranking-body {
+  overflow-x: auto;
+}
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.ranking-table th,
+.ranking-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #d5dde3;
+  text-align: left;
+}
+.ranking-row.highlighted {
+  background: #fff3bf;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  #app {
+    padding: 6px;
+  }
+  .screen {
+    padding: 10px;
+  }
+}
