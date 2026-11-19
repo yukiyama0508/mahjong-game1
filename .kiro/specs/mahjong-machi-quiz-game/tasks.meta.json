@@ -1,5 +1,74 @@
 {
-  "pbtResults": {},
+  "pbtResults": {
+    "2.2 手牌の表示順のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794989691450
+    },
+    "2.4 手牌文字列のラウンドトリップのプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794990102513
+    },
+    "2.5 シリアライザの正準形と parse-print-parse のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794990103184
+    },
+    "2.6 不正な手牌文字列の拒否のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794990103760
+    },
+    "3.3 待ち集合の並べ替え不変性のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794992647866
+    },
+    "3.4 不正な手牌の拒否のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794992648972
+    },
+    "3.5 待ち集合と Interpretation の存在の同値のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794992664193
+    },
+    "8.2 正誤判定のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794995804468
+    },
+    "8.10 名前の検証のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794995822860
+    },
+    "7.3 通常問題の妥当性のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794996297568
+    },
+    "7.4 連続する問題の手牌が異なることのプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794996298573
+    },
+    "7.5 清一色問題の妥当性のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794996298773
+    },
+    "10.2 残り時間の表示のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794997201151
+    },
+    "10.10 登録の再送制御のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1794997679244
+    },
+    "12.7 強調表示の規則のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1795101616116
+    },
+    "12.4 回答の選択操作のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1795101626270
+    },
+    "12.10 名前のテキスト表示のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1795101777943
+    }
+  },
   "executionHistory": {
     "1.1 Vite + TypeScript プロジェクトを初期化する": [
       {
@@ -42,6 +111,840 @@
         "executionId": "0a837942-1dcc-4214-ae33-10a10d22512a",
         "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
         "timestamp": 1794989128871
+      }
+    ],
+    "2.2 手牌の表示順のプロパティテストを書く": [
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794989584316
+      },
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794989950799
+      }
+    ],
+    "2.3 手牌文字列のパーサとシリアライザを実装する": [
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794989584657
+      },
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794989952106
+      }
+    ],
+    "2. 牌と手牌文字列": [
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794989952291
+      }
+    ],
+    "2.4 手牌文字列のラウンドトリップのプロパティテストを書く": [
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794989953088
+      },
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794990127837
+      }
+    ],
+    "2.5 シリアライザの正準形と parse-print-parse のプロパティテストを書く": [
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794989953499
+      },
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794990128742
+      }
+    ],
+    "2.6 不正な手牌文字列の拒否のプロパティテストを書く": [
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794989955867
+      },
+      {
+        "executionId": "634f273c-eba7-4c85-8a63-e635f82f294b",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794990129062
+      }
+    ],
+    "3.1 Interpretation の列挙を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794991429794
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992186039
+      }
+    ],
+    "3.2 待ち計算を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992186606
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992305827
+      }
+    ],
+    "3.3 待ち集合の並べ替え不変性のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992306228
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992690043
+      }
+    ],
+    "3.4 不正な手牌の拒否のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992307232
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992690315
+      }
+    ],
+    "3.5 待ち集合と Interpretation の存在の同値のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992308347
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992694375
+      }
+    ],
+    "3.6 待ち形分類を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992308987
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992694576
+      }
+    ],
+    "3. 分解の列挙、待ち計算、待ち形分類": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992694672
+      }
+    ],
+    "3.7 待ち形分類のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992695088
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992915153
+      }
+    ],
+    "4. チェックポイント - 牌、待ち計算の確認": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794992915872
+      }
+    ],
+    "5.1 役判定と役満検出を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794993151035
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794994797810
+      }
+    ],
+    "5.2 符・翻・点数の計算と高点法を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794994798432
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794994949178
+      }
+    ],
+    "5.3 点数計算の決定性と順序非依存のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794994949473
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995277189
+      }
+    ],
+    "5.4 点数の構造と範囲のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794994951000
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995277869
+      }
+    ],
+    "5. 役と点数の計算": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794994952028
+      }
+    ],
+    "5.5 高点法と Question_Score の最大性のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794994952845
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995278954
+      }
+    ],
+    "5.6 点数の符・翻に対する単調性のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794994953760
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995279472
+      }
+    ],
+    "5.7 点数計算の既知の例の単体テストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794994954328
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995280423
+      }
+    ],
+    "6. チェックポイント - 点数計算の確認": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995281312
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995424552
+      }
+    ],
+    "7.1 乱数を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995462934
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995765176
+      }
+    ],
+    "8.1 回答の判定を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995464049
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995765888
+      }
+    ],
+    "8.9 名前の検証を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995465117
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995766858
+      }
+    ],
+    "7.2 問題生成器を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995767821
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996135237
+      }
+    ],
+    "8.2 正誤判定のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995768259
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996135901
+      }
+    ],
+    "8.10 名前の検証のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794995769044
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996135789
+      }
+    ],
+    "7. 乱数と問題生成": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996135658
+      }
+    ],
+    "7.3 通常問題の妥当性のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996136618
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996772127
+      }
+    ],
+    "7.4 連続する問題の手牌が異なることのプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996137638
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996772559
+      }
+    ],
+    "7.5 清一色問題の妥当性のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996138475
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996772392
+      }
+    ],
+    "7.6 問題生成の単体テストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996139270
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996772664
+      }
+    ],
+    "8.3 Streak 管理を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996140200
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996773071
+      }
+    ],
+    "8.4 Streak の範囲と遷移のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996773574
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996845399
+      }
+    ],
+    "8.5 出題種別の並びのプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996774552
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996845698
+      }
+    ],
+    "8.6 ゲームセッションの状態遷移を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996775057
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996846347
+      }
+    ],
+    "8. 判定、Streak、セッション、名前検証": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996846596
+      }
+    ],
+    "8.7 セッションの合計点と記録のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996847146
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996960814
+      }
+    ],
+    "8.8 遅延提出、重複提出、セッション外の操作のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996848070
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996961079
+      }
+    ],
+    "9. チェックポイント - ドメイン層の確認": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996961936
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794996988726
+      }
+    ],
+    "10.1 Clock と Timer を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997043500
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997149167
+      }
+    ],
+    "10.4 NameStore を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997043961
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997149487
+      }
+    ],
+    "10.6 Supabase クライアントと RankingClient を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997044075
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997149731
+      }
+    ],
+    "10.2 残り時間の表示のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997149913
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997386139
+      }
+    ],
+    "10.3 Timer の単体テストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997150479
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997385834
+      }
+    ],
+    "10.5 NameStore のラウンドトリップのプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997151474
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997386404
+      }
+    ],
+    "10.7 RankingClient のエラー分類の単体テストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997152266
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997387289
+      }
+    ],
+    "10.8 AvailabilityTracker を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997152882
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997388090
+      }
+    ],
+    "10.9 RegistrationController を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997388877
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997448748
+      }
+    ],
+    "10. インフラ層": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997449054
+      }
+    ],
+    "10.10 登録の再送制御のプロパティテストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997449333
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997691473
+      }
+    ],
+    "10.11 AvailabilityTracker と RegistrationController の単体テストを書く": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997450021
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997691946
+      }
+    ],
+    "11. チェックポイント - インフラ層の確認": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997692682
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997722649
+      }
+    ],
+    "12.1 DOM ヘルパーと TileView を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997941264
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1795026649916
+      }
+    ],
+    "12.2 ログイン、スタート、説明画面を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1795026650193
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795100979520
+      }
+    ],
+    "12.3 回答の選択ロジックとゲーム画面を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1795026650874
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795100980402
+      }
+    ],
+    "12.5 ゲーム終了画面を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1795026651657
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795100981679
+      }
+    ],
+    "12.6 ランキング画面を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1795026652194
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795100981849
+      }
+    ],
+    "12.8 AppController を実装する": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795100874802
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795100982490
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101530970
+      }
+    ],
+    "12.9 エントリポイント、HTML、スタイルを実装する": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795100875225
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101639953
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101729182
+      }
+    ],
+    "14. 最終チェックポイント": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795100875490
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101920815
+      }
+    ],
+    "12.4 回答の選択操作のプロパティテストを書く": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101595137
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101634478
+      }
+    ],
+    "12.7 強調表示の規則のプロパティテストを書く": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101595942
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101635288
+      }
+    ],
+    "12. UI 層": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101729524
+      }
+    ],
+    "12.10 名前のテキスト表示のプロパティテストを書く": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101738782
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101862518
+      }
+    ],
+    "12.11 画面の単体テストを書く": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101739588
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101863065
+      }
+    ],
+    "13.1 ビルド成果物のスモークテストを書く": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101864049
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101916627
+      }
+    ],
+    "13.2 Supabase の統合テストを書く": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101864823
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101916773
+      }
+    ],
+    "13. ビルド成果物と統合の確認": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101916875
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101916922
       }
     ]
   }
