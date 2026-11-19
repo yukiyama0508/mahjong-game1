@@ -124,77 +124,77 @@
 - [x] 6. チェックポイント - 点数計算の確認
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 7. 乱数と問題生成
-  - [ ] 7.1 乱数を実装する
+- [x] 7. 乱数と問題生成
+  - [x] 7.1 乱数を実装する
     - `src/domain/rng.ts` に `Rng`、`createSeededRng`(mulberry32)、`createMathRng` を実装する
     - _Requirements: 3.4_
 
-  - [ ] 7.2 問題生成器を実装する
+  - [x] 7.2 問題生成器を実装する
     - `src/domain/question-generator.ts` に `Question`、`QuestionKind`、`generateQuestion`、`validateNormalQuestion`、`validateChinitsuQuestion`、`NORMAL_FALLBACKS`、`CHINITSU_FALLBACKS` を実装する
     - 7種類の待ち形を等確率で選び、待ち形ごとの雛形(両面、カンチャン、ペンチャン、シャボ、単騎、七対子の単騎、多面待ち)で候補を作り、検証で棄却して最大100回再試行する。失敗時はフォールバック(待ち形ごとに1つ以上の通常問題、5つ以上の清一色問題)を返す
     - 直前の `handKey` と同じ候補は棄却する。清一色問題は1種類の数牌だけで、待ち2種類以上、役満なしを検証する
     - フォールバックの手牌は文字列で定義し、すべて検証を満たすこと
     - _Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 3.10, 4.9, 4.10, 4.11, 4.12_
 
-  - [ ]* 7.3 通常問題の妥当性のプロパティテストを書く
+  - [x]* 7.3 通常問題の妥当性のプロパティテストを書く
     - **Property 12: 通常問題は妥当である**
     - **Validates: Requirements 3.1, 3.2, 3.3, 3.5, 3.6, 3.7, 3.10**
 
-  - [ ]* 7.4 連続する問題の手牌が異なることのプロパティテストを書く
+  - [x]* 7.4 連続する問題の手牌が異なることのプロパティテストを書く
     - **Property 13: 連続する問題の手牌は異なる**
     - **Validates: Requirements 3.8**
 
-  - [ ]* 7.5 清一色問題の妥当性のプロパティテストを書く
+  - [x]* 7.5 清一色問題の妥当性のプロパティテストを書く
     - **Property 14: 清一色問題は妥当である**
     - **Validates: Requirements 4.9, 4.10, 4.11**
 
-  - [ ]* 7.6 問題生成の単体テストを書く
+  - [x]* 7.6 問題生成の単体テストを書く
     - 乱数値を `k/7` 付近に固定した7種類の待ち形の選択、全フォールバック手が検証を満たすこと(待ち形ごとに1つ以上、清一色は5つ以上)、常に棄却される条件でフォールバックが返ることを確認する
     - _Requirements: 3.4, 3.9, 4.12_
 
-- [ ] 8. 判定、Streak、セッション、名前検証
-  - [ ] 8.1 回答の判定を実装する
+- [x] 8. 判定、Streak、セッション、名前検証
+  - [x] 8.1 回答の判定を実装する
     - `src/domain/answer-judge.ts` に `JudgeResult`、`judgeAnswer` を実装する(正解は集合の完全一致。`missing` と `extra` を返す)
     - _Requirements: 7.1, 7.5_
 
-  - [ ]* 8.2 正誤判定のプロパティテストを書く
+  - [x]* 8.2 正誤判定のプロパティテストを書く
     - **Property 17: 正誤判定は集合の一致**
     - **Validates: Requirements 7.1, 7.4, 7.5**
 
-  - [ ] 8.3 Streak 管理を実装する
+  - [x] 8.3 Streak 管理を実装する
     - `src/domain/streak-manager.ts` に `StreakState`、`initialStreak`、`nextKind`、`onPresented`、`onJudged` を実装する
     - _Requirements: 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.13_
 
-  - [ ]* 8.4 Streak の範囲と遷移のプロパティテストを書く
+  - [x]* 8.4 Streak の範囲と遷移のプロパティテストを書く
     - **Property 15: Streak は常に 0〜3 で、遷移規則に従う**
     - **Validates: Requirements 4.1, 4.2, 4.3, 4.5, 4.6, 4.13**
 
-  - [ ]* 8.5 出題種別の並びのプロパティテストを書く
+  - [x]* 8.5 出題種別の並びのプロパティテストを書く
     - **Property 16: 出題種別の並び**
     - **Validates: Requirements 4.4, 4.7, 4.8**
 
-  - [ ] 8.6 ゲームセッションの状態遷移を実装する
+  - [x] 8.6 ゲームセッションの状態遷移を実装する
     - `src/domain/session.ts` に `SESSION_MS`、`AnsweredQuestion`、`SessionState`、`SubmitOutcome`、`startSession`、`submit`、`endSession` を実装する
     - `submit` は、終了後、経過時間30,000ms以上、同一問題の2回目以降、空の回答では `ignored` を返し状態を変えない。判定成立時は点数加算、記録の追記、Streak 更新、次の問題の生成と提示を1回の遷移で行う。`endSession` は未提出の現在問題を破棄する
     - _Requirements: 1.2, 1.8, 1.9, 1.11, 4.5, 5.9, 5.10, 5.11, 5.12, 7.2, 7.3, 7.9, 7.10, 7.11_
 
-  - [ ]* 8.7 セッションの合計点と記録のプロパティテストを書く
+  - [x]* 8.7 セッションの合計点と記録のプロパティテストを書く
     - **Property 18: セッションの合計点と記録**
     - **Validates: Requirements 1.8, 7.2, 7.3, 7.9, 7.11, 8.2, 8.6**
 
-  - [ ]* 8.8 遅延提出、重複提出、セッション外の操作のプロパティテストを書く
+  - [x]* 8.8 遅延提出、重複提出、セッション外の操作のプロパティテストを書く
     - **Property 19: 遅延提出、重複提出、セッション外の操作は無視される**
     - **Validates: Requirements 1.9, 5.9, 5.10, 5.11, 5.12**
 
-  - [ ] 8.9 名前の検証を実装する
+  - [x] 8.9 名前の検証を実装する
     - `src/domain/name-validator.ts` に `NameError`、`validateName` を実装する(trim は全角スペースを含む。コードポイント数で1〜20、制御文字なし)
     - _Requirements: 9.2, 13.2, 13.3_
 
-  - [ ]* 8.10 名前の検証のプロパティテストを書く
+  - [x]* 8.10 名前の検証のプロパティテストを書く
     - **Property 23: 名前の検証**
     - **Validates: Requirements 9.2, 13.2, 13.3**
 
-- [ ] 9. チェックポイント - ドメイン層の確認
+- [x] 9. チェックポイント - ドメイン層の確認
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 10. インフラ層
