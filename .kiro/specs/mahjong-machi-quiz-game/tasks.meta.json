@@ -55,6 +55,18 @@
     "10.10 登録の再送制御のプロパティテストを書く": {
       "status": "passed",
       "lastRunTimestamp": 1794997679244
+    },
+    "12.7 強調表示の規則のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1795101616116
+    },
+    "12.4 回答の選択操作のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1795101626270
+    },
+    "12.10 名前のテキスト表示のプロパティテストを書く": {
+      "status": "passed",
+      "lastRunTimestamp": 1795101777943
     }
   },
   "executionHistory": {
@@ -736,6 +748,203 @@
         "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
         "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
         "timestamp": 1794997722649
+      }
+    ],
+    "12.1 DOM ヘルパーと TileView を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1794997941264
+      },
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1795026649916
+      }
+    ],
+    "12.2 ログイン、スタート、説明画面を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1795026650193
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795100979520
+      }
+    ],
+    "12.3 回答の選択ロジックとゲーム画面を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1795026650874
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795100980402
+      }
+    ],
+    "12.5 ゲーム終了画面を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1795026651657
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795100981679
+      }
+    ],
+    "12.6 ランキング画面を実装する": [
+      {
+        "executionId": "3970cc67-5fd6-4cd7-a15d-168020f30c50",
+        "chatSessionId": "sess_c7622710-4b40-4704-be5a-e15f5e866109",
+        "timestamp": 1795026652194
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795100981849
+      }
+    ],
+    "12.8 AppController を実装する": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795100874802
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795100982490
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101530970
+      }
+    ],
+    "12.9 エントリポイント、HTML、スタイルを実装する": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795100875225
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101639953
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101729182
+      }
+    ],
+    "14. 最終チェックポイント": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795100875490
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101920815
+      }
+    ],
+    "12.4 回答の選択操作のプロパティテストを書く": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101595137
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101634478
+      }
+    ],
+    "12.7 強調表示の規則のプロパティテストを書く": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101595942
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101635288
+      }
+    ],
+    "12. UI 層": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101729524
+      }
+    ],
+    "12.10 名前のテキスト表示のプロパティテストを書く": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101738782
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101862518
+      }
+    ],
+    "12.11 画面の単体テストを書く": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101739588
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101863065
+      }
+    ],
+    "13.1 ビルド成果物のスモークテストを書く": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101864049
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101916627
+      }
+    ],
+    "13.2 Supabase の統合テストを書く": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101864823
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101916773
+      }
+    ],
+    "13. ビルド成果物と統合の確認": [
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101916875
+      },
+      {
+        "executionId": "cba72ade-5ac7-441b-a620-f6e2a5d0ea10",
+        "chatSessionId": "sess_1264a746-09cd-4471-97d6-d0ad6d1c758d",
+        "timestamp": 1795101916922
       }
     ]
   }
